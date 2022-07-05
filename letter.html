@@ -1,0 +1,153 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+   font-family: 'Varela Round', 'Quicksand', sans-serif;
+  background-color: #f26185;
+}
+
+.postcard {
+  width: 800px;
+  height: 500px;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  border-radius: 2%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3em;
+  box-shadow: .8em .8em 15px rgba(0,0,0,.3);
+   -ms-transform: rotate(2.5deg); /* IE 9 */
+    -webkit-transform: rotate(2.5deg); /* Chrome, Safari, Opera */
+    transform: rotate(2.5deg);
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  color: #f7f7f7;
+  margin-bottom: -15px;
+}
+
+p {
+  display: inline;
+  font-size: 1.3em;
+}
+
+/*animation*/
+.postcard:hover,
+.postcard:active,
+.postcard:focus{
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+
+
+}
+
+/*form*/
+input,
+textarea {
+  border: none;
+  border-radius: 4%;
+  height: 1.9em;
+  padding: .7em;
+  font-size: 1.3em;
+  font-family: 'Varela Round', 'Quicksand', sans-serif;
+}
+
+input:focus,
+textarea:focus {
+   outline-color: pink;
+}
+
+.mail_stamp {
+  width: 100px;
+  float: right;
+}
+
+#address {
+  text-decoration: underline;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+  height: 10em;
+  width: 17em;
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+.push{
+  margin-bottom: 1em;
+  margin-top: .5em;
+}
+
+#recipient_email{
+  margin-top: 4.5em;
+  margin-bottom: 1.5em;
+}
+
+/*footer*/
+footer {
+  margin: 2em auto;
+  text-align: center;
+  font-family: 'Varela Round', 'Quicksand', sans-serif;
+  color: white;
+}
+
+footer p {
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+
+</style>
+<head>
+  <title>Get Your Letter</title>
+</head>
+
+<body>
+  <div class = "wrap">
+    <h1>Love Letter</h1>
+    <div class = "postcard">
+
+      <div class = "letter">
+        <form action="#" method="post" class="message_form">
+          <p class = "push">Dear </p><input type = "text" id = "recipient" name = "recipient_name" placeholder = "name of lover" class = "push"><p> ,</p><br>
+          <label for = "message">Message</label><br>
+          <textarea id = "message" name = "message_to_recipient" placeholder = "Your face in the dream! Many times your memories are! Although there is love for you, there are many thoughts that cannot be said to the mind that is struggling to say!"></textarea><br>
+          <p>Yours Lovely </p><br>
+          <input type = "text" id = "sender_name" name = "sender" placeholder = "your name">
+        </form>
+      </div>
+
+      <div class = "address"> 
+        <img src = "https://www.kindpng.com/picc/m/84-842555_pink-color-heart-clip-art-heart-png-pink.png" class = "mail_stamp">
+        <form action="#" method="post" class="message_form">
+        <input type = "email" id = "recipient_email" name = "recipient_email" placeholder = "Lover's e-mail">
+        </form>
+        <p id = "address">Jaffna,<br>
+          Sri Lanka,<br>
+          Asia.
+        </p>
+      </div>
+      
+    </div>
+  </div>
+  
+  <footer>
+    <p>Lovely crafted by @thekotlinboy.</p>
+  </footer>
+  
+</body>
